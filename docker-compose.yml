@@ -8,3 +8,9 @@ services:
       - ./web/src:/code
     ports:
       - "5000:5000"
+  # mqtt:
+    # build: ./mqtt
+    # volumes:
+      # - ./mqtt/mosquitto/config:/mosquitto/config
+    # ports:
+      # - "1883:1883"

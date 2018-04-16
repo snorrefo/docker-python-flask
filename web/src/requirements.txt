@@ -1,1 +1,7 @@
 Flask==0.12
+setuptools
+numpy
+python-dateutil
+pytz
+pandas
+bokeh==0.12.15

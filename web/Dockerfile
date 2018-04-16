@@ -1,8 +1,10 @@
 # Use an official Python runtime as a parent image
-FROM python:3-alpine
+FROM python:3
 
 # Set the working directory to /code
 WORKDIR /code
+
+RUN apt-get install subversion
 
 COPY ./src/requirements.txt /tmp/
 
@@ -18,9 +20,9 @@ COPY ./src/app.py /code/
 
 
 
-# Make port 80 available to the world outside this container
+# Make port 5000 available to the world outside this container
 EXPOSE 5000
 
 
 # Run app.py when the container launches
-CMD ["python", "app.py"]
+#CMD ["python", "app.py"]
